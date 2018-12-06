@@ -6,8 +6,8 @@ import "bootstrap/dist/js/bootstrap.js";
 import "my-module/metisMenu/metisMenu.js";
 // DataTables JavaScript
 import "my-module/datatables/js/jquery.dataTables.js";
-// import "my-module/datatables-plugins/dataTables.bootstrap.js";
-// import "my-module/datatables-responsive/dataTables.responsive.js";
+import "my-module/datatables-plugins/dataTables.bootstrap.min.js";
+import "my-module/datatables-responsive/dataTables.responsive.js";
 // Custom Theme JavaScript
 import "my-module/sb-admin-2.js";
 
