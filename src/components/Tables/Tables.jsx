@@ -1,3 +1,16 @@
+// jQuery
+import $ from "jquery";
+// Bootstrap Core JavaScript
+import "bootstrap/dist/js/bootstrap.js";
+// Metis Menu Plugin JavaScript
+import "my-module/metisMenu/metisMenu.js";
+// DataTables JavaScript
+import "my-module/datatables/js/jquery.dataTables.js";
+// import "my-module/datatables-plugins/dataTables.bootstrap.js";
+// import "my-module/datatables-responsive/dataTables.responsive.js";
+// Custom Theme JavaScript
+import "my-module/sb-admin-2.js";
+
 import React, { PureComponent } from 'react';
 import DataTables from './DataTables';
 import KitchenSink from './KitchenSink';
@@ -7,10 +20,6 @@ import Bordered from './Bordered';
 import Hover from './Hover';
 import Context from './Context';
 
-import $ from "jquery";
-//import "../../../node_modules/datatables/media/css/jquery.dataTables.min.css";
-//import "../../../node_modules/datatables/media/js/jquery.dataTables.min.js";
-
 class Tables extends PureComponent {
     constructor(props) {
         super(props);
@@ -19,13 +28,13 @@ class Tables extends PureComponent {
     componentDidMount() {
         document.title = "Tables";
         document.getElementById("pageTitle").innerHTML = "Tables";
-        
-        // Datatable
-        // $(document).ready(function() {
-        //     $('#dataTables-example').DataTable({
-        //         responsive: true
-        //     });
-        // });
+
+        // Datatables
+        $(document).ready(function() {
+            $('#dataTables-example').DataTable({
+                responsive: true
+            });
+        });
     }
     render() { 
         return ( 

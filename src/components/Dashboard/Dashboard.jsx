@@ -1,3 +1,10 @@
+// jQuery
+import $ from "jquery";
+// Morris Charts JavaScript
+import Morris from "my-module/morrisjs/morris.js";
+// Custom Theme JavaScript
+import "my-module/sb-admin-2.js";
+
 import React, { PureComponent } from 'react';
 import AreaChart from './AreaChart';
 import BarChart from './BarChart';
@@ -6,7 +13,6 @@ import Notifications from './Notifications';
 import DonutChart from './DonutChart';
 import Chat from './Chat';
 import TopChart from './TopChart';
-import Script from '../Template/Script';
 
 class Dashboard extends PureComponent {
     
@@ -41,8 +47,6 @@ class Dashboard extends PureComponent {
                 </div>
                 {/* <!-- /.row --> */}
 
-                <Script />
-                
             </React.Fragment>
         );
     }

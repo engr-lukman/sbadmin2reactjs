@@ -1,3 +1,20 @@
+// Bootstrap Core CSS
+import "my-module/bootstrap/css/bootstrap.min.css";
+// MetisMenu CSS
+import "my-module/metisMenu/metisMenu.min.css";
+// DataTables CSS
+import "my-module/datatables-plugins/dataTables.bootstrap.css";
+// DataTables Responsive CSS
+import "my-module/datatables-responsive/dataTables.responsive.css";
+// Social Buttons CSS
+import "my-module/bootstrap-social/bootstrap-social.css";
+// Morris Charts CSS
+import "my-module/morrisjs/morris.css";
+// Custom CSS
+import "my-module/sb-admin-2.css";
+// Custom Fonts
+import "my-module/font-awesome/css/font-awesome.min.css";
+
 import React, { PureComponent } from 'react';
 import ReactDOM from 'react-dom';
 import {Route, HashRouter} from "react-router-dom";

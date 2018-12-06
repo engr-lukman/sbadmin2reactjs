@@ -1,5 +1,4 @@
 import React, { PureComponent } from 'react';
-import Script from '../Template/Script';
 
 class DataTables extends PureComponent {
     constructor(props) {
@@ -444,9 +443,7 @@ class DataTables extends PureComponent {
                     {/* <!-- /.col-lg-12 --> */}
                 </div>
                 {/* <!-- /.row --> */}
-
-                <Script />
-                
+               
             </React.Fragment>
          );
     }

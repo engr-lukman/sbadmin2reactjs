@@ -1,10 +1,20 @@
+// jQuery
+import $ from "jquery";
+// Bootstrap Core JavaScript
+import "bootstrap/dist/js/bootstrap.js";
+// Metis Menu Plugin JavaScript
+import "my-module/metisMenu/metisMenu.js";
+// Morris Charts JavaScript
+import Morris from "my-module/morrisjs/morris.js";
+// Custom Theme JavaScript
+import "my-module/sb-admin-2.js";
+
 import React, { PureComponent } from 'react';
 import AreaChart from './AreaChart';
-import BarChart from '../FlotCharts/BarChart';
+import BarChart from './BarChart';
 import LineChart from './LIneChart';
 import DonutChart from './DonutChart';
 import Documentation from './Documentation';
-import Script from '../../Template/Script';
 
 class MorrisCharts extends PureComponent {
     constructor(props) {
@@ -26,9 +36,6 @@ class MorrisCharts extends PureComponent {
                     <Documentation />
                 </div>
                 {/* <!-- /.row --> */}
-
-                <Script />
-
             </React.Fragment>
          );
     }

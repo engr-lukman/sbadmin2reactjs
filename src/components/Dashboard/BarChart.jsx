@@ -5,6 +5,46 @@ class BarChart extends PureComponent {
         super(props);
         this.state = {  }
     }
+    componentDidMount() {
+        // Bar data for morris
+        window.Morris.Bar({
+            element: 'morris-bar-chart',
+            data: [{
+                y: '2006',
+                a: 100,
+                b: 90
+            }, {
+                y: '2007',
+                a: 75,
+                b: 65
+            }, {
+                y: '2008',
+                a: 50,
+                b: 40
+            }, {
+                y: '2009',
+                a: 75,
+                b: 65
+            }, {
+                y: '2010',
+                a: 50,
+                b: 40
+            }, {
+                y: '2011',
+                a: 75,
+                b: 65
+            }, {
+                y: '2012',
+                a: 100,
+                b: 90
+            }],
+            xkey: 'y',
+            ykeys: ['a', 'b'],
+            labels: ['Series A', 'Series B'],
+            hideHover: 'auto',
+            resize: true
+        });
+    }
     render() { 
         return ( 
             <React.Fragment>
@@ -34,76 +74,7 @@ class BarChart extends PureComponent {
                     {/* <!-- /.panel-heading --> */}
                     <div className="panel-body">
                         <div className="row">
-                            <div className="col-lg-4">
-                                <div className="table-responsive">
-                                    <table className="table table-bordered table-hover table-striped">
-                                        <thead>
-                                            <tr>
-                                                <th>#</th>
-                                                <th>Date</th>
-                                                <th>Time</th>
-                                                <th>Amount</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td>3326</td>
-                                                <td>10/21/2013</td>
-                                                <td>3:29 PM</td>
-                                                <td>$321.33</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3325</td>
-                                                <td>10/21/2013</td>
-                                                <td>3:20 PM</td>
-                                                <td>$234.34</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3324</td>
-                                                <td>10/21/2013</td>
-                                                <td>3:03 PM</td>
-                                                <td>$724.17</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3323</td>
-                                                <td>10/21/2013</td>
-                                                <td>3:00 PM</td>
-                                                <td>$23.71</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3322</td>
-                                                <td>10/21/2013</td>
-                                                <td>2:49 PM</td>
-                                                <td>$8345.23</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3321</td>
-                                                <td>10/21/2013</td>
-                                                <td>2:23 PM</td>
-                                                <td>$245.12</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3320</td>
-                                                <td>10/21/2013</td>
-                                                <td>2:15 PM</td>
-                                                <td>$5663.54</td>
-                                            </tr>
-                                            <tr>
-                                                <td>3319</td>
-                                                <td>10/21/2013</td>
-                                                <td>2:13 PM</td>
-                                                <td>$943.45</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                                {/* <!-- /.table-responsive --> */}
-                            </div>
-                            {/* <!-- /.col-lg-4 (nested) --> */}
-                            <div className="col-lg-8">
-                                <div id="morris-bar-chart"></div>
-                            </div>
-                            {/* <!-- /.col-lg-8 (nested) --> */}
+                            <div id="morris-bar-chart"></div>
                         </div>
                         {/* <!-- /.row --> */}
                     </div>
